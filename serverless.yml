@@ -46,3 +46,19 @@ functions:
       - http:
           path: world
           method: get
+  testPost:
+    handler: bin/testPost
+    events:
+      - http:
+          path: testPost
+          method: post
+          cors:
+            origins:
+              - "*"
+            headers:
+              - Content-Type
+              - X-Amz-Date
+              - Authorization
+              - X-Api-Key
+              - X-Amz-Security-Token
+              - X-Amz-User-Agent
