@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./node_modules/.bin/serverless offline start --useDocker",
+    "start": "make build && node ./node_modules/.bin/serverless offline start --useDocker",
     "watch": "nodemon --watch ./ -e go,js --exec make build"
   },
   "repository": {
