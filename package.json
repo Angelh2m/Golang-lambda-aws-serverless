@@ -1,0 +1,27 @@
+{
+  "name": "myService",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./node_modules/.bin/serverless offline start --useDocker",
+    "watch": "nodemon --watch ./ -e go,js --exec make build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Angelh2m/Golang-lambda-aws-serverless.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Angelh2m/Golang-lambda-aws-serverless/issues"
+  },
+  "homepage": "https://github.com/Angelh2m/Golang-lambda-aws-serverless#readme",
+  "devDependencies": {},
+  "dependencies": {
+    "nodemon": "^2.0.6",
+    "serverless": "^2.15.0",
+    "serverless-offline": "^6.8.0"
+  }
+}

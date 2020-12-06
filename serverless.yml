@@ -24,7 +24,9 @@ provider:
   name: aws
   runtime: go1.x
 
-
+plugins:
+  - serverless-offline
+  
 package:
   exclude:
     - ./**
