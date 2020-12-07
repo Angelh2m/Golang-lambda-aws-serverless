@@ -1,7 +1,23 @@
 
-# Get Serverless template
+# Create Serverless template
 
-https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/go/
+Run: ``sls create --template aws-go --path goCazilia``
+
+> https://www.serverless.com/framework/docs/providers/aws/examples/hello-world/go/
+
+Run: `` go mod init <NAME>``  
+
+Run: ``go get github.com/aws/aws-lambda-go/events``
+
+Run: ``go get github.com/aws/aws-lambda-go/lambda``
+
+Add serverless plugin to serverless.yml
+
+```
+plugins:
+  - serverless-offline
+  
+```
 
 ## How to use serverless offline
 
